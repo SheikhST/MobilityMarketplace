@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "Vehicles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Model": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "NumOfPassengers": {
+      "type": "integer"
+    },
+    "Rating": {
+      "type": "integer"
+    },
+    "Contact": {
+      "type": "biginteger"
+    },
+    "location": {
+      "via": "vehicles",
+      "model": "location"
+    }
+  }
+}
